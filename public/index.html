@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tanay Banerjee | Backend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tanay Banerjee, a backend developer"
+    />
+    <!-- PicoCSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technologies">Skills</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+      <ul>
+        <label>
+          <input role="switch" type="checkbox" id="toggle-theme" />
+        </label>
+      </ul>
+    </nav>
+
+    <header class="container" id="about">
+      <hgroup>
+        <h1>Tanay Banerjee</h1>
+        <h2>Backend Developer</h2>
+      </hgroup>
+      <hr />
+      <p>
+        Hi 👋, I’m Tanay Banerjee — a curious Backend Developer who loves
+        turning ideas into scalable, reliable, and fast applications.
+      </p>
+
+      <p>
+        I’ve always been fascinated by what goes on behind the scenes of great
+        software — the architecture, performance tuning, and security that make
+        things work seamlessly for users. That curiosity drives me to keep
+        exploring backend systems.
+      </p>
+      <p>
+        When I’m not coding, I enjoy sharing my learnings through blogs and
+        articles.
+      </p>
+      <p>
+        💻 My projects live here:
+        <a href="https://github.com/iamtanaybanerjee"
+          >github.com/iamtanaybanerjee</a
+        >
+      </p>
+      <p>
+        ✍️ My tech blogs are here:
+        <a href="https://iamtanaybanerjee.hashnode.dev/"
+          >iamtanaybanerjee.hashnode.dev
+        </a>
+      </p>
+
+      <p>Always learning. Always building. 🚀</p>
+      <p>
+        <a href="#connect" role="button">Contact Me</a>
+        <a href="/resume.pdf" role="button" class="secondary" target="_blank"
+          >Resume</a
+        >
+      </p>
+    </header>
+
+    <main class="container">
+      <section id="projects">
+        <header>
+          <hgroup>
+            <h2>My projects</h2>
+            <h3>What I've been working on</h3>
+          </hgroup>
+        </header>
+        <div class="grid">
+          <!--Project 1-->
+          <group>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1611764553921-437fb44f747a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Folder/file management project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Docman</h3>
+                <p>
+                  Docman is an API-based Document Management System that enables
+                  users to create folders with specific restrictions (e.g., file
+                  type and maximum file limit), upload files with metadata, and
+                  manage files and folders through operations like create, read,
+                  update, and delete.
+                </p>
+              </hgroup>
+              <footer>
+                <div>
+                  <!-- <a href="#" class="secondary">🖥️ Demo</a> -->
+                  <a
+                    href="https://github.com/iamtanaybanerjee/docman"
+                    class="outline"
+                    >⚙️ Code</a
+                  >
+                </div>
+              </footer>
+            </article>
+          </group>
+          <!--Project 2-->
+          <group>
+            <figure>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1696408290876-4c8b13a921c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="photo curation project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Picstap</h3>
+                <p>
+                  Picstap is a photo curation system that allows users to
+                  discover, organize, and revisit their favorite images using
+                  the Unsplash API. With a focus on simplicity and
+                  functionality, Picstap enables seamless photo tagging, history
+                  tracking, and future-ready extensibility.
+                </p>
+              </hgroup>
+              <footer>
+                <div>
+                  <a href="https://picstap.vercel.app/" class="secondary"
+                    >🖥️ Demo</a
+                  >
+                  <a
+                    href="https://github.com/iamtanaybanerjee/picstap"
+                    class="outline"
+                    >⚙️ Code</a
+                  >
+                </div>
+              </footer>
+            </article>
+          </group>
+          <!--Project 3-->
+          <group>
+            <figure>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1710409625297-2ca61f4ea5b1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Movie curation project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Cinebuff</h3>
+                <p>
+                  Cinebuff is a movie curation system where users can explore
+                  movies using the TMDB API, organize them into personalized
+                  watchlists, wishlists, and curated lists, and share reviews
+                  and ratings. All content is publicly accessible, encouraging
+                  discovery and sharing among movie lovers.
+                </p>
+              </hgroup>
+              <footer>
+                <div>
+                  <a href="https://cinebuff-ten.vercel.app/" class="secondary"
+                    >🖥️ Demo</a
+                  >
+                  <a
+                    href="https://github.com/iamtanaybanerjee/cinebuff"
+                    class="outline"
+                    >⚙️ Code</a
+                  >
+                </div>
+              </footer>
+            </article>
+          </group>
+        </div>
+      </section>
+
+      <section id="technologies">
+        <header>
+          <hgroup>
+            <h2>Technologies</h2>
+            <h3>Skills I'm currently learning and practicing</h3>
+          </hgroup>
+        </header>
+        <div class="grid">
+          <!--Tech card 1-->
+          <article>
+            <header>
+              <h3>Backend</h3>
+            </header>
+            <ul>
+              <li>JavaScript</li>
+              <li>NodeJS</li>
+              <li>Express</li>
+              <li>JWT</li>
+              <li>OAuth</li>
+            </ul>
+          </article>
+          <!--Tech card 2-->
+          <article>
+            <header>
+              <h3>Database & Testing</h3>
+            </header>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Jest</li>
+            </ul>
+          </article>
+          <!--Tech card 3-->
+          <article>
+            <header>
+              <h3>Frontend & Mobile</h3>
+            </header>
+            <ul>
+              <li>Flutter</li>
+              <li>ReactJS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="connect">
+        <header>
+          <hgroup>
+            <h2>Connect</h2>
+            <h3>Want to talk anything tech? I'm just a ping away</h3>
+          </hgroup>
+        </header>
+        <div class="grid">
+          <!--connect 1-->
+          <article>
+            <header>
+              <h3>Gmail</h3>
+            </header>
+            <p>
+              <a href="mailto:tanaybanerjee94@gmail.com"
+                >tanaybanerjee94@gmail.com</a
+              >
+            </p>
+          </article>
+
+          <!--connect 2-->
+          <article>
+            <header>
+              <h3>Social</h3>
+            </header>
+            <p>
+              <a href="https://www.linkedin.com/in/iamtanaybanerjee"
+                >Linkedin</a
+              >
+              <span> • </span>
+              <a href="https://github.com/iamtanaybanerjee">GitHub</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container neog-footer">
+      <small>
+        © 2025 Tanay Banerjee • Built with
+        <a href="https://picocss.com">PicoCSS</a>
+      </small>
+    </footer>
+  </body>
+</html>
