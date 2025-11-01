@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { sequelize } = require("./models");
+const path = require("path");
 require("pg");
 
 const app = express();
@@ -16,10 +17,6 @@ sequelize
   .then(() => console.log("DB Connected"))
   .catch((error) => console.log("Failed to connect to DB", error));
 
-// app.listen(3000, () => {
-//   console.log("Server is listening to port 3000");
-// });
-
-// ✅ Do NOT call app.listen() on Vercel
-// Vercel will handle this automatically
-module.exports = app;
+app.listen(3000, () => {
+  console.log("Server is listening to port 3000");
+});
