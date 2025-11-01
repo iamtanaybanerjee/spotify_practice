@@ -8,6 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// serve static files from public
+app.use(express.static(path.join(__dirname, "public")));
+
 sequelize
   .authenticate()
   .then(() => console.log("DB Connected"))
