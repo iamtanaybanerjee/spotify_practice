@@ -4,8 +4,8 @@ require("dotenv").config();
 const secureCookie = require("../services/secureCookie.service");
 const { getArtists } = require("../services/spotify.services");
 
-//const redirect_uri = "https://cinebuff-ten.vercel.app/api/spotify/callback";
-const redirect_uri = "https://port-jade-mu.vercel.app/spotify/callback";
+const redirect_uri =
+  "https://spotify-practice-amber.vercel.app/spotify/callback";
 
 const generateRandomString = (length) => {
   return crypto.randomBytes(60).toString("hex").slice(0, length);
